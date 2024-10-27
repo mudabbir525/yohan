@@ -185,8 +185,8 @@ h1, h2, h3 {
 
 .mission-container {
     display: flex;
-    width: 100%;
-    max-width: 1200px;  /* Limits the width of the section */
+    max-width: 100vw;
+/*     max-width: 1200px; */
     gap: 20px;
 }
 
