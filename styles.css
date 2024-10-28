@@ -97,6 +97,9 @@ h1, h2, h3 {
         right: 40px;
         z-index:11;
     }
+    iframe{
+        width:100%;
+    }
 }
 /* Hero Section */
 .hero {
