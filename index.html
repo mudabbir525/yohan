@@ -175,6 +175,11 @@ Email:jesusgospelchurch2@gmail.com
             scrollRows.forEach(row => {
               row.style.animationDuration = row.classList.contains('fast-scroll') ? '10s' : '15s';
             });
+
+             function toggleMenu() {
+        const navLinks = document.querySelector('.nav-links');
+        navLinks.classList.toggle('active');
+    }
             </script>
 </body>
 </html>
