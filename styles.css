@@ -27,6 +27,7 @@ h1, h2, h3 {
     top: 0;
     z-index: 10;
     transition: background 0.3s ease;
+    height: 110px;
 }
 
 .navbar.scrolled {
