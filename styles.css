@@ -94,6 +94,7 @@ h1, h2, h3 {
         display: block;
         position: absolute;
         right: 40px;
+        z-index:11;
     }
 }
 /* Hero Section */
