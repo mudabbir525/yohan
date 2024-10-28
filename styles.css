@@ -17,29 +17,26 @@ h1, h2, h3 {
     font-weight: bold;
 }
 
-/* Navbar */
 .navbar {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px;
-    background-color: #0d0f1d;  /* Start with a transparent background */
-    /* position: fixed;  */
-    width: 100%;      /* Full width */
+    background-color: #0d0f1d;
+    width: 100%;
     top: 0;
-    z-index: 10;      /* Ensure navbar appears above content */
+    z-index: 10;
     transition: background 0.3s ease;
 }
 
 .navbar.scrolled {
-    background: rgba(0, 0, 0, 0.8);  /* Change to semi-transparent black on scroll */
+    background: rgba(0, 0, 0, 0.8);
 }
 
 .logo-img {
     width: 80px;
     transition: transform 0.3s ease-in-out;
     border-radius: 10px;
-    float: left;
     position: absolute;
     top: 15px;
     left: 40px;
@@ -64,6 +61,37 @@ h1, h2, h3 {
     color: #00ffc3;
 }
 
+/* Responsive styling */
+.hamburger {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: #fff;
+}
+
+@media (max-width: 769px) {
+    .nav-links {
+        display: none;  /* Hide nav links by default */
+        flex-direction: column;
+        gap: 10px;
+        position: absolute;
+        top: 70px;
+        right: 30px;
+        background-color: rgba(0, 0, 0, 0.9);
+        padding: 20px;
+        border-radius: 8px;
+    }
+
+    .nav-links.active {
+        display: flex;  /* Show nav links when active */
+    }
+
+    .hamburger {
+        display: block;
+        position: absolute;
+        right: 40px;
+    }
+}
 /* Hero Section */
 .hero {
     display: flex;
